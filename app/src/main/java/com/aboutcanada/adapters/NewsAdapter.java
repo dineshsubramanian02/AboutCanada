@@ -43,6 +43,10 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsHolder> {
         Log.d(TAG,"Title--"+ rowsList.get(position).getTitle());
         holder.tvTitle.setText(rowsList.get(position).getTitle());
         holder.tvDescription.setText(rowsList.get(position).getDescription());
+        if(rowsList.get(position).getDescription()!=null && !rowsList.get(position).getDescription().equalsIgnoreCase("")) // set description values if values is not null or not empty
+            holder.tvDescription.setText(rowsList.get(position).getDescription());
+        else
+            holder.tvDescription.setText("Details Not Available");
         holder.click(rowsList.get(position),onItemClickListener);
         Glide.with(context).load(rowsList.get(position).getImageHref()).diskCacheStrategy(DiskCacheStrategy.SOURCE).placeholder(R.drawable.no_image).into(holder.ivNews);
     }
