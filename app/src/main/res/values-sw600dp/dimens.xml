@@ -1,0 +1,7 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="text_tile">23sp</dimen>
+    <dimen name="text_description">20sp</dimen>
+    <dimen name="splash_screen_text_size">23sp</dimen>
+    <dimen name="description_size">15sp</dimen>
+</resources>

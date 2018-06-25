@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">About Canada</string>
+    <string name="refresh">Refresh</string>
+    <string name="network_error_message">No Network detected. Please check your internet connection</string>
+    <string name="server_error_message">Error fetching details</string>
+    <string name="ok">Ok</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="exit">Do you want to exit application?</string>
+</resources>
