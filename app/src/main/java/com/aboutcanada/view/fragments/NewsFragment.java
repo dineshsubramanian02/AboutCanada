@@ -143,6 +143,20 @@ public class NewsFragment extends BaseFragment implements MainViewInterface {
             errorDialog(R.string.server_error_message,true);
     }
 
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        menu.clear();
+        inflater.inflate(R.menu.menu, menu);
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if(id == R.id.refresh){
+            getNewsList();
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }
 
